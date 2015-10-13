@@ -1,8 +1,170 @@
 // Add custom font
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
+// override bootstrap vars
 $font-family-base: 'Open Sans', sans-serif;
+$brand-primary: #29647C;
+$brand-secondary: #DD4124;
 
-// Import bootstrap and fontawesome
+$enable-transitions: true;
+
 @import "bootstrap";
-@import "font-awesome";
+
+// color definitions
+$dark-primary: $gray-dark;
+$footer-primary: #CCCCCC;
+$light-primary: #F9F6F4;
+
+// general styles
+body {
+  background: $light-primary;
+}
+
+header {
+  margin-bottom: 0rem;
+
+  a {
+    color: $dark-primary;
+    &:hover {
+      color: darken($dark-primary, 20%);
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: $font-size-h1;
+}
+
+h3 {
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+
+.lead {
+  margin-bottom: 1.5rem;
+}
+
+
+// homepage
+.home section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content-introduction {
+  h1 {
+    margin-bottom: 1rem;
+    font-size: $display1-size;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: $font-size-h1;
+    font-weight: 300;
+  }
+}
+
+.step-list {
+  font-size: $font-size-h2;
+  font-weight: 300;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.content-features {
+  background: opacify($brand-primary, 0.3);
+  color: $gray-lightest;
+}
+
+.half-circle-1,
+.half-circle-2 {
+  height: 150px;
+  width: 300px;
+  border-radius: 300px 300px 0 0;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.half-circle-1 {
+  background:$brand-primary;
+  transform: rotate(225deg);
+  margin-top: 107px;
+}
+
+.half-circle-2 {
+  background: $brand-secondary;
+  transform: rotate(-45deg);
+}
+
+// dashboard
+.nav-side {
+
+  .nav-link {
+    font-weight: 300;
+    color: $gray-dark;
+
+    &.active {
+      background: none;
+      color: lighten($brand-primary, 20%);
+      border-right: lighten($brand-primary, 20%) solid 2px;
+      border-radius: 0;
+
+      &:hover {
+        background: none;
+        color: $gray-dark;
+      }
+    }
+
+    &:hover {
+      border-radius: $border-radius 0 0 $border-radius;
+      color: lighten($brand-primary, 20%);
+      border-right: lighten($brand-primary, 20%) solid 2px;
+    }
+  }
+
+  .nav-title {
+    font-weight: bold;
+  }
+}
+
+.content-title {
+  background: $brand-primary;
+  @include gradient-horizontal(lighten($brand-primary, 10%), $brand-primary, 40%, 100%);
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    color: $gray-lightest;
+  }
+}
+
+.big-number {
+  font-size: $display3-size;
+  font-weight: bold;
+}
+
+// coupons
+.search-box {
+  margin-bottom: 2rem;
+  
+  input, button {
+    height: 3rem;
+  }
+}
+
+// footer
+.page-footer {
+  //background-color: $footer-primary;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

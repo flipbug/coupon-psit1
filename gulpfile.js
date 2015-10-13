@@ -16,7 +16,7 @@ gulp.task('sass', function() {
       includePaths: [
         config.sassPath,
         config.bowerDir + '/bootstrap/scss',
-        config.bowerDir + '/font-awesome/scss',
+        config.bowerDir + '/fontawesome/scss',
       ]
     }))
     .on('error', notify.onError(function(error){

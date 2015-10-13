@@ -1,5 +1,7 @@
-# jamnham
-The one and only Jam'n'Ham
+# coupon manger
+Demo project for web1/psit1.
+
+The goal is to create a wireframe to demonstrate the basic layout and functionality.
 
 ## Setup
 
