@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>coupon</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="app coupons-overview">
+    <header class="page-header">
+      <nav class="navbar container">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+          &#9776;
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+          <a class="navbar-brand" href="index.html">coupon</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Eingeloggt als Daniel Milenkovic</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+      <section class="content-title">
+        <div class="container">
+          <h1>Coupons - Erstellen</h1>
+        </div>
+      </section>
+
+      <section class="content-dashboard container">
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="nav nav-side nav-pills nav-stacked">
+              <li class="nav-item nav-title">
+                General
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Lorem Ipsum</a>
+              </li>
+
+              <li class="nav-item nav-title">
+                Coupons
+              </li>
+              <li class="nav-item">
+                <a href="coupons-overview.html" class="nav-link">Übersicht</a>
+              </li>
+              <li class="nav-item">
+                <a href="coupons-create.html" class="nav-link active">Neue erstellen</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Vergangene Aktionen</a>
+              </li>
+
+              <li class="nav-item nav-title">
+                Versand
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Übersicht</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Neue Empfängerliste</a>
+              </li>
+
+            </ul>
+          </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <form method="GET" action="coupons-design.html">
+                <fieldset class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" required placeholder="Coupon X">
+                  <small class="text-muted">Der Name des Coupons ist für den Empfänger nicht sichtbar.</small>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="inputValue">Betrag</label>
+                  <input type="number" class="form-control" id="inputValue" required placeholder="50">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="inputDate">Gültig bis</label>
+                  <input type="date" class="form-control" id="inputDate" rows="3"/>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="exampleSelect1">Empfängerliste</label>
+                  <select class="form-control" id="exampleSelect1">
+                    <option>Testuser</option>
+                    <option>Alle</option>
+                    <option>Pro-Kunden</option>
+                  </select>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="inputText">Text</label>
+                  <textarea class="form-control" id="inputText" rows="3"></textarea>
+                  <small class="text-muted">Benutzen Sie $name und $vorname als Platzhalter für Name/Vorname des Empfängers.</small>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Weiter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
